@@ -30,7 +30,7 @@ To get started with this template, you just need to follow these simple steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/wdevon99/Next-js-starter.git
+   git clone https://github.com/abubakkariiui/next-js-starter.git
    ```
 
 2. Install dependencies:
