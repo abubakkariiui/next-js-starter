@@ -18,7 +18,8 @@ Welcome to the Next.js Full-stack starter template! This template provides a sta
 - **Ant Design:** Includes Ant Design for UI components, providing a sleek and modern design out of the box.
 - **Styling:** Style using CSS, SASS, SCSS, or CSS-in-JS.
 
-![Screenshot](https://img.hotimg.com/ss0801c6061e6c5b5d.png)
+<img width="1314" alt="68747470733a2f2f696d672e686f74696d672e636f6d2f7373303830316336303631653663356235642e706e67" src="https://github.com/abubakkariiui/next-js-starter/assets/88508599/d544147e-e37f-4f8b-a759-ccc7d19af9da">
+
 
 ---
 
@@ -29,7 +30,7 @@ To get started with this template, you just need to follow these simple steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/wdevon99/Next-js-starter.git
+   git clone https://github.com/abubakkariiui/next-js-starter.git
    ```
 
 2. Install dependencies:
