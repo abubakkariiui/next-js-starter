@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import { FloatButton } from "antd";
-import { ArrowLeftOutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import TodoService from "@services/TodoService";
@@ -22,7 +22,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     getAllTodos();
-  }, [])
+  }, []);
 
   const getAllTodos = async () => {
     setIsLoading(true);
@@ -39,25 +39,18 @@ export default function Dashboard() {
 
   return (
     <main className={styles.container}>
-      <CustomAvatar
-        image={session?.user?.image || ''}
-        size={60}
-      />
+      <CustomAvatar image={session?.user?.image || ""} size={60} />
       <h1 className={styles.heading}>
-        Hi {session?.user?.name?.split(' ')?.[0]} :)
+        Hi {session?.user?.name?.split(" ")?.[0]} :)
       </h1>
-      <h2 className={styles.sub_heading}>
-        Track your todos with ease.
-      </h2>
+      <h2 className={styles.sub_heading}>Track your todos with ease...</h2>
       <TodosCard
         todos={todos}
         setTodos={setTodos}
         setIsAddTodoModalOpen={setIsAddTodoModalOpen}
         isLoading={isLoading}
       />
-      <TodosProgressCard
-        todos={todos}
-      />
+      <TodosProgressCard todos={todos} />
       <CreateTodoModal
         isOpen={isAddTodoModalOpen}
         setIsOpen={setIsAddTodoModalOpen}
@@ -67,9 +60,8 @@ export default function Dashboard() {
       <FloatButton
         icon={<ArrowLeftOutlined />}
         style={{ left: 30, top: 30 }}
-        onClick={() => router.push('/')}
+        onClick={() => router.push("/")}
       />
     </main>
   );
 }
-
